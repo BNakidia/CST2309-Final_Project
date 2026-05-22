@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,242 +11,250 @@
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <a href="index.html" class="nav-logo">FlowState Athletics</a>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">FlowState Athletics</a>
 
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-links" id="navMenu">
-            <li><a href="index.html" class="active">About Us</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="events.html">Events</a></li>
-        </ul>
-
-        <button id="bwToggle" onclick="toggleBW()">White Mode</button>
-    </nav>
-</header>
-
-<main>
-
-<section class="hero">
-    <img src="images/about_hero.jpg" alt="FlowState Athletics Gym">
-    <h1>About FlowState Athletics</h1>
-    <p class="intro-text">
-        FlowState Athletics is a community‑driven fitness space built to help individuals unlock their potential through movement, discipline, and support.
-    </p>
-</section>
-
-<section class="mission">
-    <h2>Our Mission</h2>
-    <p class="mission-text">
-        Our mission is to create an environment where every member feels empowered, motivated, and supported on their fitness journey, no matter their experience level.
-    </p>
-</section>
-
-<section class="values">
-    <h2>Our Core Values</h2>
-
-    <div class="values-container">
-
-        <div class="overlay-card">
-            <img src="images/value_consistency.png" alt="Consistency Icon">
-            <div class="overlay-box">
-                <h3>Consistency</h3>
-                <p>Steady, intentional effort leads to long‑term success and meaningful transformation.</p>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
 
-        <div class="overlay-card">
-            <img src="images/value_strength.png" alt="Strength Icon">
-            <div class="overlay-box">
-                <h3>Strength</h3>
-                <p>Strength is more than physical power—it's confidence, resilience, and the courage to grow.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/value_community.png" alt="Community Icon">
-            <div class="overlay-box">
-                <h3>Community</h3>
-                <p>We foster a welcoming atmosphere where members uplift, encourage, and inspire one another.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/value_wellbeing.png" alt="Well-being Icon">
-            <div class="overlay-box">
-                <h3>Well‑Being</h3>
-                <p>A balanced approach to fitness that supports both physical health and mental clarity.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="programs">
-    <h2>Programs We Offer</h2>
-
-    <div class="programs-container">
-
-        <div class="overlay-card">
-            <img src="images/program_strength.jpg" alt="Strength Training">
-            <div class="overlay-box">
-                <h3>Strength Training</h3>
-                <p>Build muscle, improve endurance, and develop proper lifting techniques.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/program_group_fitness.jpg" alt="Group Fitness Class">
-            <div class="overlay-box">
-                <h3>Group Fitness Classes</h3>
-                <p>High‑energy workouts led by certified instructors in a motivating environment.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/program_coaching.jpg" alt="Personal Coaching">
-            <div class="overlay-box">
-                <h3>Personal Coaching</h3>
-                <p>One‑on‑one training tailored to your goals and lifestyle.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="staff">
-    <h2>Meet Our Trainers</h2>
-
-    <div class="staff-container">
-
-        <div class="overlay-card">
-            <img src="images/trainer_jordan.jpg" alt="Trainer Jordan">
-            <div class="overlay-box">
-                <h3>Jordan Hayes</h3>
-                <p>Head Coach — 10+ years of experience helping members build confidence through strength.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/trainer_marcus.jpg" alt="Trainer Marcus">
-            <div class="overlay-box">
-                <h3>Marcus Davis</h3>
-                <p>Strength & Conditioning Coach specializing in functional training and athletic performance.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/trainer_sophia.jpg" alt="Trainer Sophia">
-            <div class="overlay-box">
-                <h3>Sophia Rivera</h3>
-                <p>Yoga Instructor focused on mindful movement, flexibility, and recovery.</p>
-            </div>
-        </div>
-
-        <div class="overlay-card">
-            <img src="images/trainer_emily.jpg" alt="Trainer Emily">
-            <div class="overlay-box">
-                <h3>Emily Carter</h3>
-                <p>Nutrition Specialist helping members build healthy habits through personalized guidance.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="visit-us">
-    <h2>Visit Us</h2>
-
-    <div class="visit-container">
-
-        <div class="hours">
-            <h3>Hours of Operation</h3>
-            <ul>
-                <li>Mon–Fri: 6am – 10pm</li>
-                <li>Saturday: 8am – 8pm</li>
-                <li>Sunday: 8am – 6pm</li>
-            </ul>
-        </div>
-
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>600 Washington St, New York, NY 10014</p>
-            <p>(555) 123‑4567</p>
-            <p>info@flowstateathletics.com</p>
-        </div>
-
-        <div class="map-placeholder">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4178839327146!2d-74.01415341161527!3d40.73082949762415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ed09a11c3d%3A0x3c18cdf9b21d242e!2s600%20Washington%20St%2C%20New%20York%2C%20NY%2010014!5e0!3m2!1sfr!2sus!4v1779428335322!5m2!1sfr!2sus"
-             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </div>
-</section>
-
-</main>
-
-<footer>
-    <div class="footer-columns">
-
-        <div class="footer-col">
-            <h3>FlowState Athletics</h3>
-            <p>Your journey to strength, balance, and confidence starts here.</p>
-        </div>
-
-        <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">About Us</a></li>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html" class="active">About Us</a></li>
                 <li><a href="membership.html">Membership</a></li>
                 <li><a href="events.html">Events</a></li>
             </ul>
+
+            <button id="bwToggle" onclick="toggleBW()">White Mode</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img src="images/about_hero.jpg" alt="FlowState Athletics Gym">
+            <h1>About FlowState Athletics</h1>
+            <p class="intro-text">
+                FlowState Athletics is a community‑driven fitness space built to help individuals unlock their potential
+                through movement, discipline, and support.
+            </p>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p class="mission-text">
+                Our mission is to create an environment where every member feels empowered, motivated, and supported on
+                their fitness journey, no matter their experience level.
+            </p>
+        </section>
+
+        <section class="values">
+            <h2>Our Core Values</h2>
+
+            <div class="values-container">
+
+                <div class="overlay-card">
+                    <img src="images/value_consistency.png" alt="Consistency Icon">
+                    <div class="overlay-box">
+                        <h3>Consistency</h3>
+                        <p>Steady, intentional effort leads to long‑term success and meaningful transformation.</p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/value_strength.png" alt="Strength Icon">
+                    <div class="overlay-box">
+                        <h3>Strength</h3>
+                        <p>Strength is more than physical power—it's confidence, resilience, and the courage to grow.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/value_community.png" alt="Community Icon">
+                    <div class="overlay-box">
+                        <h3>Community</h3>
+                        <p>We foster a welcoming atmosphere where members uplift, encourage, and inspire one another.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/value_wellbeing.png" alt="Well-being Icon">
+                    <div class="overlay-box">
+                        <h3>Well‑Being</h3>
+                        <p>A balanced approach to fitness that supports both physical health and mental clarity.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="programs">
+            <h2>Programs We Offer</h2>
+
+            <div class="programs-container">
+
+                <div class="overlay-card">
+                    <img src="images/program_strength.jpg" alt="Strength Training">
+                    <div class="overlay-box">
+                        <h3>Strength Training</h3>
+                        <p>Build muscle, improve endurance, and develop proper lifting techniques.</p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/program_group_fitness.jpg" alt="Group Fitness Class">
+                    <div class="overlay-box">
+                        <h3>Group Fitness Classes</h3>
+                        <p>High‑energy workouts led by certified instructors in a motivating environment.</p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/program_coaching.jpg" alt="Personal Coaching">
+                    <div class="overlay-box">
+                        <h3>Personal Coaching</h3>
+                        <p>One‑on‑one training tailored to your goals and lifestyle.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="staff">
+            <h2>Meet Our Trainers</h2>
+
+            <div class="staff-container">
+
+                <div class="overlay-card">
+                    <img src="images/trainer_jordan.jpg" alt="Trainer Jordan">
+                    <div class="overlay-box">
+                        <h3>Jordan Hayes</h3>
+                        <p>Head Coach — 10+ years of experience helping members build confidence through strength.</p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/trainer_marcus.jpg" alt="Trainer Marcus">
+                    <div class="overlay-box">
+                        <h3>Marcus Davis</h3>
+                        <p>Strength & Conditioning Coach specializing in functional training and athletic performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/trainer_sophia.jpg" alt="Trainer Sophia">
+                    <div class="overlay-box">
+                        <h3>Sophia Rivera</h3>
+                        <p>Yoga Instructor focused on mindful movement, flexibility, and recovery.</p>
+                    </div>
+                </div>
+
+                <div class="overlay-card">
+                    <img src="images/trainer_emily.jpg" alt="Trainer Emily">
+                    <div class="overlay-box">
+                        <h3>Emily Carter</h3>
+                        <p>Nutrition Specialist helping members build healthy habits through personalized guidance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="visit-us">
+            <h2>Visit Us</h2>
+
+            <div class="visit-container">
+
+                <div class="hours">
+                    <h3>Hours of Operation</h3>
+                    <ul>
+                        <li>Mon–Fri: 6am – 10pm</li>
+                        <li>Saturday: 8am – 8pm</li>
+                        <li>Sunday: 8am – 6pm</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>600 Washington St, New York, NY 10014</p>
+                    <p>(555) 123‑4567</p>
+                    <p>info@flowstateathletics.com</p>
+                </div>
+
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4178839327146!2d-74.01415341161527!3d40.73082949762415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ed09a11c3d%3A0x3c18cdf9b21d242e!2s600%20Washington%20St%2C%20New%20York%2C%20NY%2010014!5e0!3m2!1sfr!2sus!4v1779428335322!5m2!1sfr!2sus"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+
+            <div class="footer-col">
+                <h3>FlowState Athletics</h3>
+                <p>Your journey to strength, balance, and confidence starts here.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>(555) 123‑4567</p>
+                <p>info@flowstateathletics.com</p>
+            </div>
+
         </div>
 
-        <div class="footer-col">
-            <h3>Contact</h3>
-            <p>(555) 123‑4567</p>
-            <p>info@flowstateathletics.com</p>
+        <div class="footer-bottom">
+            <p>© 2026 FlowState Athletics. All rights reserved.</p>
         </div>
+    </footer>
 
-    </div>
+    <script>
 
-    <div class="footer-bottom">
-        <p>© 2026 FlowState Athletics. All rights reserved.</p>
-    </div>
-</footer>
+        (function () {
+            if (localStorage.getItem("theme") === "white") {
+                document.documentElement.classList.add("white-mode");
+            }
+        })();
 
-<script>
-    
-    (function () {
-        if (localStorage.getItem("theme") === "white") {
-            document.documentElement.classList.add("white-mode");
+        window.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("theme") === "white") {
+                document.getElementById("bwToggle").innerText = "Dark Mode";
+            }
+        });
+
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
         }
-    })();
 
-    window.addEventListener("DOMContentLoaded", function () {
-        if (localStorage.getItem("theme") === "white") {
-            document.getElementById("bwToggle").innerText = "Dark Mode";
+        function toggleBW() {
+            const html = document.documentElement;
+            const btn = document.getElementById("bwToggle");
+            const isWhite = html.classList.toggle("white-mode");
+            btn.innerText = isWhite ? "Dark Mode" : "White Mode";
+            localStorage.setItem("theme", isWhite ? "white" : "dark");
         }
-    });
-
-    function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("show");
-    }
-
-    function toggleBW() {
-        const html = document.documentElement;
-        const btn = document.getElementById("bwToggle");
-        const isWhite = html.classList.toggle("white-mode");
-        btn.innerText = isWhite ? "Dark Mode" : "White Mode";
-        localStorage.setItem("theme", isWhite ? "white" : "dark");
-    }
-</script>
+    </script>
 
 </body>
+
 </html>
