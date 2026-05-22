@@ -1,25 +1,72 @@
 html {
-    transition: filter 0.6s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+:root {
+    --bg: #000000;
+    --bg-alt: #111111;
+    --bg-card: #1a1a1a;
+    --bg-nav: #000000;
+    --text: #ffffff;
+    --text-muted: #cccccc;
+    --text-dim: #777777;
+    --border: #333333;
+    --border-light: #444444;
+    --btn-bg: #111111;
+    --btn-border: #444444;
+    --input-bg: #111111;
+    --day-bg: #1a1a1a;
+    --day-empty: #0d0d0d;
+    --day-hover: #222222;
+    --calendar-bg: #111111;
+    --overlay: rgba(0, 0, 0, 0.75);
+    --footer-bg: #000000;
+    --card-shadow: rgba(255, 255, 255, 0.08);
+    --card-shadow-hover: rgba(255, 255, 255, 0.12);
+}
+
+html.white-mode {
+    --bg: #f5f5f5;
+    --bg-alt: #ffffff;
+    --bg-card: #ffffff;
+    --bg-nav: #ffffff;
+    --text: #111111;
+    --text-muted: #444444;
+    --text-dim: #888888;
+    --border: #dddddd;
+    --border-light: #cccccc;
+    --btn-bg: #f0f0f0;
+    --btn-border: #cccccc;
+    --input-bg: #ffffff;
+    --day-bg: #ffffff;
+    --day-empty: #f0f0f0;
+    --day-hover: #eeeeee;
+    --calendar-bg: #ffffff;
+    --overlay: rgba(0, 0, 0, 0.6);
+    --footer-bg: #111111;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: rgba(0, 0, 0, 0.15);
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: Verdana, sans-serif;
-    background: #000000;
-    color: #ffffff;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
 h1, h2, h3 {
     margin: 0 0 10px;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--text);
 }
 
 p {
     margin: 0 0 12px;
     line-height: 1.5;
-    color: #cccccc;
+    color: var(--text-muted);
 }
 
 section {
@@ -27,10 +74,12 @@ section {
 }
 
 header {
-    background: #000000;
+    background: var(--bg-nav);
     padding: 15px 0;
     position: relative;
     z-index: 9999;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.5s ease, border-color 0.5s ease;
 }
 
 .navbar {
@@ -43,11 +92,12 @@ header {
 }
 
 .nav-logo {
-    color: #ffffff;
+    color: var(--text);
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 1px;
+    transition: color 0.5s ease;
 }
 
 .nav-links {
@@ -59,29 +109,30 @@ header {
 }
 
 .nav-links a {
-    color: #cccccc;
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.5s ease;
 }
 
 .nav-links a:hover,
 .nav-links .active {
-    color: #ffffff;
+    color: var(--text);
 }
-
 
 #bwToggle {
     padding: 10px 16px;
-    background: #111111;
-    color: #ffffff;
-    border: 1px solid #444444;
+    background: var(--btn-bg);
+    color: var(--text);
+    border: 1px solid var(--btn-border);
     border-radius: 6px;
     cursor: pointer;
     margin-left: 15px;
+    transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
 #bwToggle:hover {
-    background: #222222;
+    background: var(--day-hover);
 }
 
 .hamburger {
@@ -94,8 +145,9 @@ header {
 .hamburger span {
     width: 28px;
     height: 3px;
-    background: #ffffff;
+    background: var(--text);
     border-radius: 3px;
+    transition: background 0.5s ease;
 }
 
 @media (max-width: 850px) {
@@ -108,12 +160,12 @@ header {
         top: 70px;
         right: 0;
         width: 100%;
-        background: #000000;
+        background: var(--bg-nav);
         flex-direction: column;
         text-align: center;
         padding: 20px 0;
         display: none;
-        border-top: 1px solid #333333;
+        border-top: 1px solid var(--border);
         z-index: 9999;
     }
 
@@ -156,7 +208,7 @@ header {
 }
 
 .subtitle {
-    color: #cccccc;
+    color: var(--text-muted);
     font-size: 16px;
 }
 
@@ -183,14 +235,14 @@ img {
     position: relative;
     border-radius: 18px;
     overflow: hidden;
-    background: #000000;
-    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.08);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background: var(--bg);
+    box-shadow: 0 6px 18px var(--card-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.5s ease;
 }
 
 .overlay-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 32px var(--card-shadow-hover);
 }
 
 .overlay-card img {
@@ -205,23 +257,26 @@ img {
     left: 0;
     width: 100%;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.75);
+    background: var(--overlay);
     color: #ffffff;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, background 0.5s ease;
+    box-sizing: border-box;
 }
 
 .overlay-box h3 {
     margin: 0 0 5px;
     font-size: 20px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .overlay-box p {
     margin: 0;
     font-size: 14px;
+    color: #eeeeee;
 }
 
 .registration-form {
@@ -237,7 +292,8 @@ label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--text);
+    transition: color 0.5s ease;
 }
 
 input,
@@ -245,11 +301,13 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #444444;
-    background: #111111;
-    color: #ffffff;
+    border: 1px solid var(--border-light);
+    background: var(--input-bg);
+    color: var(--text);
     border-radius: 6px;
     font-size: 15px;
+    transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    box-sizing: border-box;
 }
 
 textarea {
@@ -258,16 +316,17 @@ textarea {
 
 button {
     padding: 12px 20px;
-    background: #ffffff;
-    color: #000000;
+    background: var(--text);
+    color: var(--bg);
     border: none;
     border-radius: 6px;
     font-size: 15px;
     cursor: pointer;
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
 button:hover {
-    background: #cccccc;
+    background: var(--text-muted);
 }
 
 .calendar-section {
@@ -287,17 +346,19 @@ button:hover {
     border-collapse: collapse;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background: #111111;
-    border: 1px solid #333333;
+    background: var(--calendar-bg);
+    border: 1px solid var(--border);
+    transition: background 0.5s ease, border-color 0.5s ease;
 }
 
 .static-calendar .header div {
-    background: #000000;
-    color: #ffffff;
+    background: var(--bg);
+    color: var(--text);
     padding: 12px 0;
     text-align: center;
     font-weight: bold;
-    border: 1px solid #222222;
+    border: 1px solid var(--border);
+    transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
 .calendar-row {
@@ -307,15 +368,16 @@ button:hover {
 .day {
     min-height: 110px;
     padding: 8px;
-    border: 1px solid #333333;
+    border: 1px solid var(--border);
     vertical-align: top;
     font-size: 14px;
-    background: #1a1a1a;
-    color: #ffffff;
+    background: var(--day-bg);
+    color: var(--text);
+    transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
 .day.empty {
-    background: #0d0d0d;
+    background: var(--day-empty);
 }
 
 .event {
@@ -332,7 +394,7 @@ button:hover {
 }
 
 .day:hover {
-    background: #222222;
+    background: var(--day-hover);
     cursor: pointer;
 }
 
@@ -340,13 +402,14 @@ button:hover {
     text-align: center;
     margin-top: 12px;
     font-size: 14px;
-    color: #cccccc;
+    color: var(--text-muted);
 }
 
 footer {
-    background: #000000;
-    color: #cccccc;
+    background: var(--footer-bg);
+    color: var(--text-muted);
     padding: 40px 20px;
+    transition: background 0.5s ease;
 }
 
 .footer-columns {
@@ -362,6 +425,7 @@ footer {
     margin-bottom: 10px;
 }
 
+.footer-col p,
 .footer-col a {
     color: #cccccc;
     text-decoration: none;
@@ -376,4 +440,10 @@ footer {
     margin-top: 30px;
     color: #777777;
     font-size: 14px;
+}
+
+.mission-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
