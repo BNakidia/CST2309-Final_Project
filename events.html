@@ -26,7 +26,7 @@
             <li><a href="events.html" class="active">Events</a></li>
         </ul>
 
-        <button id="bwToggle" onclick="toggleBW()">Black & White Mode</button>
+        <button id="bwToggle" onclick="toggleBW()">White Mode</button>
     </nav>
 </header>
 
@@ -140,7 +140,7 @@
 </section>
 
 <section class="featured-events">
-    <h2>Don’t Miss These Events</h2>
+    <h2>Don't Miss These Events</h2>
 
     <div class="featured-container">
 
@@ -204,21 +204,30 @@
 </footer>
 
 <script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-}
+    // Apply saved theme immediately to avoid flash
+    (function () {
+        if (localStorage.getItem("theme") === "white") {
+            document.documentElement.classList.add("white-mode");
+        }
+    })();
 
-function toggleBW() {
-    let html = document.documentElement;
+    window.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("theme") === "white") {
+            document.getElementById("bwToggle").innerText = "Dark Mode";
+        }
+    });
 
-    if (html.style.filter === "grayscale(100%)") {
-        html.style.filter = "none";
-        document.getElementById("bwToggle").innerText = "Black & White Mode";
-    } else {
-        html.style.filter = "grayscale(100%)";
-        document.getElementById("bwToggle").innerText = "Color Mode";
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show");
     }
-}
+
+    function toggleBW() {
+        const html = document.documentElement;
+        const btn = document.getElementById("bwToggle");
+        const isWhite = html.classList.toggle("white-mode");
+        btn.innerText = isWhite ? "Dark Mode" : "White Mode";
+        localStorage.setItem("theme", isWhite ? "white" : "dark");
+    }
 </script>
 
 </body>
