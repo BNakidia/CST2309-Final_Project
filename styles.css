@@ -1,3 +1,7 @@
+html {
+    transition: filter 0.6s ease;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -63,6 +67,21 @@ header {
 .nav-links a:hover,
 .nav-links .active {
     color: #ffffff;
+}
+
+
+#bwToggle {
+    padding: 10px 16px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#bwToggle:hover {
+    background: #222222;
 }
 
 .hamburger {
