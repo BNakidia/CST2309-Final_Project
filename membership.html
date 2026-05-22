@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,91 +11,91 @@
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <a href="index.html" class="nav-logo">FlowState Athletics</a>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">FlowState Athletics</a>
 
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        <ul class="nav-links" id="navMenu">
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="membership.html" class="active">Membership</a></li>
-            <li><a href="events.html">Events</a></li>
-        </ul>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="membership.html" class="active">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
 
-        <button id="bwToggle" onclick="toggleBW()">White Mode</button>
-    </nav>
-</header>
+            <button id="bwToggle" onclick="toggleBW()">White Mode</button>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-<section class="page-title">
-    <h1>Membership Registration</h1>
-    <p class="subtitle">
-        Join a community built on strength, support, and steady progress. Register below to get started.
-    </p>
-</section>
+        <section class="page-title">
+            <h1>Membership Registration</h1>
+            <p class="subtitle">
+                Join a community built on strength, support, and steady progress. Register below to get started.
+            </p>
+        </section>
 
-<section class="registration-form">
-    <h2>Register Now</h2>
+        <section class="registration-form">
+            <h2>Register Now</h2>
 
-    <form id="membershipForm">
+            <form id="membershipForm">
 
-        <div class="form-field">
-            <label>Full Name</label>
-            <input id="fullName" type="text">
-        </div>
+                <div class="form-field">
+                    <label>Full Name</label>
+                    <input id="fullName" type="text">
+                </div>
 
-        <div class="form-field">
-            <label>Email Address</label>
-            <input id="email" type="text">
-        </div>
+                <div class="form-field">
+                    <label>Email Address</label>
+                    <input id="email" type="text">
+                </div>
 
-        <div class="form-field">
-            <label>Phone Number</label>
-            <input id="phone" type="text">
-        </div>
+                <div class="form-field">
+                    <label>Phone Number</label>
+                    <input id="phone" type="text">
+                </div>
 
-        <div class="form-field">
-            <label>Age</label>
-            <input id="age" type="number">
-        </div>
+                <div class="form-field">
+                    <label>Age</label>
+                    <input id="age" type="number">
+                </div>
 
-        <div class="form-field">
-            <label>Membership Type</label>
-            <select id="membershipType">
-                <option value="none">-- Select a Plan --</option>
-                <option value="basic">Basic</option>
-                <option value="premium">Premium</option>
-                <option value="vip">VIP</option>
-            </select>
-        </div>
+                <div class="form-field">
+                    <label>Membership Type</label>
+                    <select id="membershipType">
+                        <option value="none">-- Select a Plan --</option>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </div>
 
-        <div class="form-field">
-            <label>Fitness Goals</label>
-            <textarea id="goals" placeholder="Tell us what you want to achieve..."></textarea>
-        </div>
+                <div class="form-field">
+                    <label>Fitness Goals</label>
+                    <textarea id="goals" placeholder="Tell us what you want to achieve..."></textarea>
+                </div>
 
-        <div class="form-field">
-            <label>Additional Field 1</label>
-            <input id="extra1" type="text" placeholder="Any preferences or notes?">
-        </div>
+                <div class="form-field">
+                    <label>Additional Field 1</label>
+                    <input id="extra1" type="text" placeholder="Any preferences or notes?">
+                </div>
 
-        <div class="form-field">
-            <label>Additional Field 2</label>
-            <input id="extra2" type="text" placeholder="Anything else we should know?">
-        </div>
+                <div class="form-field">
+                    <label>Additional Field 2</label>
+                    <input id="extra2" type="text" placeholder="Anything else we should know?">
+                </div>
 
-        <div class="form-button" style="display:flex; gap:15px;">
-            <button type="button" onclick="submitForm()">Submit Registration</button>
-            <button type="button" onclick="clearForm()">Clear Entries</button>
-        </div>
+                <div class="form-button" style="display:flex; gap:15px;">
+                    <button type="button" onclick="submitForm()">Submit Registration</button>
+                    <button type="button" onclick="clearForm()">Clear Entries</button>
+                </div>
 
-        <div id="messageBox" style="
+                <div id="messageBox" style="
             display:none;
             margin-top:20px;
             padding:15px;
@@ -102,129 +103,130 @@
             font-size:15px;
         "></div>
 
-    </form>
-</section>
+            </form>
+        </section>
 
-</main>
+    </main>
 
-<footer>
-    <div class="footer-columns">
+    <footer>
+        <div class="footer-columns">
 
-        <div class="footer-col">
-            <h3>FlowState Athletics</h3>
-            <p>Strong community. Strong results. Start your journey with us today.</p>
+            <div class="footer-col">
+                <h3>FlowState Athletics</h3>
+                <p>Strong community. Strong results. Start your journey with us today.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>(555) 123‑4567</p>
+                <p>info@flowstateathletics.com</p>
+            </div>
+
         </div>
 
-        <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">About Us</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>© 2026 FlowState Athletics. All rights reserved.</p>
         </div>
+    </footer>
 
-        <div class="footer-col">
-            <h3>Contact</h3>
-            <p>(555) 123‑4567</p>
-            <p>info@flowstateathletics.com</p>
-        </div>
+    <script>
 
-    </div>
+        (function () {
+            if (localStorage.getItem("theme") === "white") {
+                document.documentElement.classList.add("white-mode");
+            }
+        })();
 
-    <div class="footer-bottom">
-        <p>© 2026 FlowState Athletics. All rights reserved.</p>
-    </div>
-</footer>
+        window.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("theme") === "white") {
+                document.getElementById("bwToggle").innerText = "Dark Mode";
+            }
+        });
 
-<script>
-    
-    (function () {
-        if (localStorage.getItem("theme") === "white") {
-            document.documentElement.classList.add("white-mode");
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
         }
-    })();
 
-    window.addEventListener("DOMContentLoaded", function () {
-        if (localStorage.getItem("theme") === "white") {
-            document.getElementById("bwToggle").innerText = "Dark Mode";
+        function toggleBW() {
+            const html = document.documentElement;
+            const btn = document.getElementById("bwToggle");
+            const isWhite = html.classList.toggle("white-mode");
+            btn.innerText = isWhite ? "Dark Mode" : "White Mode";
+            localStorage.setItem("theme", isWhite ? "white" : "dark");
         }
-    });
 
-    function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("show");
-    }
+        function submitForm() {
+            let fullName = document.getElementById("fullName").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let age = document.getElementById("age").value.trim();
+            let membership = document.getElementById("membershipType").value;
+            let goals = document.getElementById("goals").value.trim();
+            let extra1 = document.getElementById("extra1").value.trim();
+            let extra2 = document.getElementById("extra2").value.trim();
 
-    function toggleBW() {
-        const html = document.documentElement;
-        const btn = document.getElementById("bwToggle");
-        const isWhite = html.classList.toggle("white-mode");
-        btn.innerText = isWhite ? "Dark Mode" : "White Mode";
-        localStorage.setItem("theme", isWhite ? "white" : "dark");
-    }
+            let messageBox = document.getElementById("messageBox");
+            let errors = [];
 
-    function submitForm() {
-        let fullName = document.getElementById("fullName").value.trim();
-        let email = document.getElementById("email").value.trim();
-        let phone = document.getElementById("phone").value.trim();
-        let age = document.getElementById("age").value.trim();
-        let membership = document.getElementById("membershipType").value;
-        let goals = document.getElementById("goals").value.trim();
-        let extra1 = document.getElementById("extra1").value.trim();
-        let extra2 = document.getElementById("extra2").value.trim();
+            if (fullName === "") errors.push("Full Name is required.");
+            if (email === "") {
+                errors.push("Email Address is required.");
+            } else if (!email.includes("@") || !email.includes(".")) {
+                errors.push("Email format is invalid.");
+            }
+            if (phone === "") {
+                errors.push("Phone Number is required.");
+            } else if (phone.replace(/\D/g, "").length !== 10) {
+                errors.push("Phone number must be 10 digits.");
+            }
+            if (age === "") {
+                errors.push("Age is required.");
+            } else if (age < 16 || age > 100) {
+                errors.push("Age must be between 16 and 100.");
+            }
+            if (membership === "none") errors.push("Please select a Membership Type.");
+            if (goals === "") errors.push("Please enter your Fitness Goals.");
+            if (extra1 === "") errors.push("Additional Field 1 is required.");
+            if (extra2 === "") errors.push("Additional Field 2 is required.");
 
-        let messageBox = document.getElementById("messageBox");
-        let errors = [];
+            if (errors.length > 0) {
+                messageBox.style.display = "block";
+                messageBox.style.background = "#330000";
+                messageBox.style.border = "1px solid #660000";
+                messageBox.style.color = "#ff9999";
 
-        if (fullName === "") errors.push("Full Name is required.");
-        if (email === "") {
-            errors.push("Email Address is required.");
-        } else if (!email.includes("@") || !email.includes(".")) {
-            errors.push("Email format is invalid.");
-        }
-        if (phone === "") {
-            errors.push("Phone Number is required.");
-        } else if (phone.replace(/\D/g, "").length !== 10) {
-            errors.push("Phone number must be 10 digits.");
-        }
-        if (age === "") {
-            errors.push("Age is required.");
-        } else if (age < 16 || age > 100) {
-            errors.push("Age must be between 16 and 100.");
-        }
-        if (membership === "none") errors.push("Please select a Membership Type.");
-        if (goals === "") errors.push("Please enter your Fitness Goals.");
-        if (extra1 === "") errors.push("Additional Field 1 is required.");
-        if (extra2 === "") errors.push("Additional Field 2 is required.");
+                let list = "<strong>Please fix the following:</strong><ul>";
+                errors.forEach(e => list += "<li>" + e + "</li>");
+                list += "</ul>";
 
-        if (errors.length > 0) {
+                messageBox.innerHTML = list;
+                return;
+            }
+
             messageBox.style.display = "block";
-            messageBox.style.background = "#330000";
-            messageBox.style.border = "1px solid #660000";
-            messageBox.style.color = "#ff9999";
+            messageBox.style.background = "#003300";
+            messageBox.style.border = "1px solid #009900";
+            messageBox.style.color = "#99ff99";
+            messageBox.innerHTML = "<strong>Success!</strong> Your membership submission has been recorded.";
 
-            let list = "<strong>Please fix the following:</strong><ul>";
-            errors.forEach(e => list += "<li>" + e + "</li>");
-            list += "</ul>";
-
-            messageBox.innerHTML = list;
-            return;
+            document.getElementById("membershipForm").reset();
         }
 
-        messageBox.style.display = "block";
-        messageBox.style.background = "#003300";
-        messageBox.style.border = "1px solid #009900";
-        messageBox.style.color = "#99ff99";
-        messageBox.innerHTML = "<strong>Success!</strong> Your membership submission has been recorded.";
-
-        document.getElementById("membershipForm").reset();
-    }
-
-    function clearForm() {
-        document.getElementById("membershipForm").reset();
-        document.getElementById("messageBox").style.display = "none";
-    }
-</script>
+        function clearForm() {
+            document.getElementById("membershipForm").reset();
+            document.getElementById("messageBox").style.display = "none";
+        }
+    </script>
 
 </body>
+
 </html>
