@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p {
+    margin: 0 0 12px;
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+header {
+    background: #000000;
+    padding: 15px 0;
+    position: relative;
+    z-index: 9999;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    position: relative;
+    z-index: 9999;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+@media (max-width: 850px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #000000;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+        border-top: 1px solid #333333;
+        z-index: 9999;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hero {
+        margin-top: 20px;
+    }
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    filter: brightness(85%);
+}
+
+@media (max-width: 600px) {
+    .hero img {
+        max-height: 180px;
+    }
+}
+
+.hero {
+    text-align: center;
+}
+
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.subtitle {
+    color: #cccccc;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 18px;
+}
+
+.values-container,
+.programs-container,
+.staff-container,
+.benefits-container,
+.featured-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: start;
+}
+
+.overlay-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #000000;
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.overlay-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.12);
+}
+
+.overlay-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-box h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.overlay-box p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.registration-form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444444;
+    background: #111111;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cccccc;
+}
+
+.calendar-section {
+    text-align: center;
+}
+
+.calendar-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.static-calendar {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #111111;
+    border: 1px solid #333333;
+}
+
+.static-calendar .header div {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #222222;
+}
+
+.calendar-row {
+    display: contents;
+}
+
+.day {
+    min-height: 110px;
+    padding: 8px;
+    border: 1px solid #333333;
+    vertical-align: top;
+    font-size: 14px;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.day.empty {
+    background: #0d0d0d;
+}
+
+.event {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #66aaff;
+    line-height: 1.3;
+}
+
+.event.highlight {
+    color: #ff6666;
+    font-weight: bold;
+}
+
+.day:hover {
+    background: #222222;
+    cursor: pointer;
+}
+
+.calendar-note {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+footer {
+    background: #000000;
+    color: #cccccc;
+    padding: 40px 20px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #777777;
+    font-size: 14px;
+}

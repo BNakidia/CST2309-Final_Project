@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | FlowState Athletics</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">FlowState Athletics</a>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-title">
+    <h1>Upcoming Events & Promotions</h1>
+    <p class="subtitle">
+        Stay connected with our latest workshops, challenges, and community gatherings.
+    </p>
+</section>
+
+<section class="calendar-section">
+    <h2>June 2026 Calendar</h2>
+
+    <div class="static-calendar">
+
+        <div class="calendar-row header">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+
+        <div class="calendar-row">
+            <div class="day empty"></div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+        </div>
+
+        <div class="calendar-row">
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">
+                13<br>
+                <span class="event">Open Gym Day<br>All Day</span>
+            </div>
+        </div>
+
+        <div class="calendar-row">
+            <div class="day">
+                14<br>
+                <span class="event">Stretch & Mobility<br>10am</span>
+            </div>
+            <div class="day">
+                15<br>
+                <span class="event highlight">Summer Bootcamp<br>6pm</span>
+            </div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">
+                18<br>
+                <span class="event">Strength Basics<br>5pm</span>
+            </div>
+            <div class="day">19</div>
+            <div class="day">
+                20<br>
+                <span class="event">Community Run<br>9am</span>
+            </div>
+        </div>
+
+        <div class="calendar-row">
+            <div class="day">
+                21<br>
+                <span class="event">Recovery Yoga<br>11am</span>
+            </div>
+            <div class="day">
+                22<br>
+                <span class="event highlight">Yoga Workshop<br>6pm</span>
+            </div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">
+                25<br>
+                <span class="event">HIIT Express<br>7pm</span>
+            </div>
+            <div class="day">26</div>
+            <div class="day">
+                27<br>
+                <span class="event">Strength Circuit<br>10am</span>
+            </div>
+        </div>
+
+        <div class="calendar-row">
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">
+                30<br>
+                <span class="event">Intro to Lifting<br>5pm</span>
+            </div>
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+        </div>
+
+    </div>
+
+    <p class="calendar-note">Highlighted events are featured this month.</p>
+</section>
+
+<section class="featured-events">
+    <h2>Don’t Miss These Events</h2>
+
+    <div class="featured-container">
+
+        <div class="overlay-card">
+            <img src="images/event_bootcamp.jpg" alt="Summer Bootcamp Challenge">
+            <div class="overlay-box">
+                <h3>Summer Bootcamp Challenge</h3>
+                <p>June 15, 2026</p>
+            </div>
+        </div>
+
+        <div class="overlay-card">
+            <img src="images/event_yoga.jpg" alt="Yoga & Wellness Workshop">
+            <div class="overlay-box">
+                <h3>Yoga & Wellness Workshop</h3>
+                <p>June 22, 2026</p>
+            </div>
+        </div>
+
+        <div class="overlay-card">
+            <img src="images/event_appreciation.jpg" alt="Members Appreciation Night">
+            <div class="overlay-box">
+                <h3>Members Appreciation Night</h3>
+                <p>July 1, 2026</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-columns">
+
+        <div class="footer-col">
+            <h3>FlowState Athletics</h3>
+            <p>Where community, movement, and motivation come together.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>(555) 123‑4567</p>
+            <p>info@flowstateathletics.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 FlowState Athletics. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
