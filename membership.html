@@ -25,6 +25,8 @@
             <li><a href="membership.html" class="active">Membership</a></li>
             <li><a href="events.html">Events</a></li>
         </ul>
+
+        <button id="bwToggle" onclick="toggleBW()">Black & White Mode</button>
     </nav>
 </header>
 
@@ -200,6 +202,18 @@ function submitForm() {
 function clearForm() {
     document.getElementById("membershipForm").reset();
     document.getElementById("messageBox").style.display = "none";
+}
+
+function toggleBW() {
+    let html = document.documentElement;
+
+    if (html.style.filter === "grayscale(100%)") {
+        html.style.filter = "none";
+        document.getElementById("bwToggle").innerText = "Black & White Mode";
+    } else {
+        html.style.filter = "grayscale(100%)";
+        document.getElementById("bwToggle").innerText = "Color Mode";
+    }
 }
 </script>
 
